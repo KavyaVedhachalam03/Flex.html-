@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Example</title>
+  <style>
+   * {
+     box-sizing: border-box;
+   }
+   
+   .box {
+     display: flex;
+     text-align: center;
+     font-size: 30px;
+   }
+
+   .box-left {
+     background-color: blue;
+     padding: 10px;
+     flex: 50%;
+     color: white;
+   }
+
+   .box-right {
+     background-color: red;
+     padding: 10px;
+     flex: 50%;
+     color: white;
+   }
+
+   /* Responsive layout: turns the two-column layout into a column layout */
+   @media (max-width: 800px) {
+     .box {
+       flex-direction: column;
+     }
+   }
+  </style>
+</head>
+<body>
+   <div class="box">
+     <div class="box-left">1</div>
+     <div class="box-right">2</div>
+   </div>
+</body>
+</html>
